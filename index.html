@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header><h1>Blackjack</h1></header>
+    
+    <div >
+        <div class="col text-center btnB">
+            <button id="empezar" class="btn btn-success">Nuevo Juego</button>
+            <button id="pedirCarta"  class="btn btn-primary">Pedir Carta</button>
+            <button  id="plantarse" class="btn btn-danger">Plantarse</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <h2>Jugador <strong>0</strong></h2>
+            <div id="cartasJugador">                
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="col">
+            <h2>Dealer <strong>0</strong></h2>
+            <div id="cartasDealer">               
+            </div>
+        </div>
+    </div>
+    <div class="not"><h6 id="notificacion" class="notificacion"></h6></div>
+
+
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/juegoB.js"></script>
+</body>
+</html>
