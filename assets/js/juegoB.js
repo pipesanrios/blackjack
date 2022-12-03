@@ -93,7 +93,7 @@
                 notificacion[0].classList.add('dBlock')
             }
 
-        },20);
+        },1500);
         
 
     }
@@ -111,21 +111,24 @@
         imgCarta.classList.add('cartas')
         imgCartasJugador.append(imgCarta);
         
+        setTimeout(()=>{           
 
-        if (puntajeJugador > 21) {
-            notificacion[0].innerText = "Haz perdido";
-            notificacion[0].classList.remove('dNone')
-            notificacion[0].classList.add('dBlock')
-            pedir.disabled = true;
-            plantarse.disabled = true;
+       
+            if (puntajeJugador > 21) {
+                notificacion[0].innerText = "Haz perdido";
+                notificacion[0].classList.remove('dNone')
+                notificacion[0].classList.add('dBlock')
+                pedir.disabled = true;
+                plantarse.disabled = true;
+                    
                 
+            }else if(puntajeJugador === 21){
+                notificacion[0].innerText = "Haz ganado";
+                notificacion[0].classList.remove('dNone')
+                notificacion[0].classList.add('dBlock')
             
-        }else if(puntajeJugador === 21){
-            notificacion[0].innerText = "Haz ganado";
-            notificacion[0].classList.remove('dNone')
-            notificacion[0].classList.add('dBlock')
-           
-        }
+            }
+        },1500);
     });
     plantarse.addEventListener('click', () =>{
         pedir.disabled = true;
